@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_app/views/ingredients_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class RecipeCard extends StatelessWidget {
+  String information;
   final String title;
   final String rating;
   final String cookTime;
   final String thumbnailUrl;
-  RecipeCard({
+  RecipeCard({ //custom widget for recipe card.
     @required this.title,
     @required this.cookTime,
     @required this.rating,
@@ -96,6 +99,10 @@ class RecipeCard extends StatelessWidget {
                       ),
                       SizedBox(width: 7),
                       Text(cookTime),
+                      SizedBox(width: 7),
+                      ElevatedButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => IngredientPage()));
+                      }, child: Text("Ingredients"))
                     ],
                   ),
                 )
