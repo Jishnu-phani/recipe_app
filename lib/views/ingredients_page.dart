@@ -32,7 +32,7 @@ class _IngredientPageState extends State<IngredientPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("""- 1 lb chicken breasts \n - ⅔ cup mayonnaise \n - ½ cup parmesan cheese \n - 1 teaspoon garlic powder \n - 1 teaspoon seasoning salt \n - ½ teaspoon black pepper""",
+                        Text("""- 1 lb chicken breasts \n - 1 cup mayonnaise \n - ½ cup parmesan cheese \n - 1 teaspoon garlic powder \n - 1 teaspoon seasoning salt \n - ½ teaspoon black pepper""",
                             style: GoogleFonts.lato(fontSize: 15,color: Colors.black)
                         ),
                       ],
